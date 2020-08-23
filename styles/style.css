@@ -1,0 +1,304 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  --scrollbarBG: #ffff;
+  --thumbBG: black;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+}
+header.bg-img {
+  background: -webkit-linear-gradient(to right, #292E49, #536976), url("../images/home-bg.jpg");
+  background: linear-gradient(to right, rgba(41, 46, 73, 0.9), rgba(83, 105, 118, 0.9)), url("../images/home-bg.jpg");
+  background-position: center center;
+  background-position: 50% -25px;
+  background-size: cover;
+}
+header.bg-img nav.navbar-light {
+  font-size: 16px;
+  width: 100%;
+}
+header.bg-img nav.navbar-light a {
+  color: #fff;
+  font-weight: bold;
+}
+header.bg-img nav.navbar-light .navbar-toggler {
+  color: #29ca8e;
+  border: none;
+  font-size: 24px;
+}
+header.bg-img nav.navbar-light .text a {
+  font-weight: normal;
+}
+header.bg-img nav.navbar-light .text a:hover {
+  color: #29ca8e;
+  transition: all 0.25s ease-in-out;
+}
+header.bg-img nav.navbar-light .navbar-nav .nav-link {
+  color: #ffff;
+  font-weight: normal;
+}
+header.bg-img nav.navbar-light .navbar-nav .nav-link:hover {
+  color: #29ca8e;
+  transition: all 0.25s ease-in-out;
+}
+@media screen and (max-width: 992px) {
+  header.bg-img nav.navbar-light {
+    background-color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  header.bg-img nav.navbar-light .navbar-brand {
+    color: #665566;
+    font-size: 25px;
+  }
+  header.bg-img nav.navbar-light .navbar-text a {
+    color: #656565;
+  }
+  header.bg-img nav.navbar-light .navbar-nav .nav-link {
+    color: #656565;
+  }
+}
+header.bg-img .content {
+  width: 100%;
+  height: 90%;
+  padding-top: 80px;
+}
+header.bg-img .content .home-info {
+  text-align: center;
+}
+header.bg-img .content .home-info h3 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 11px;
+  font-weight: bold;
+}
+header.bg-img .content .home-info h1 {
+  font-size: 2.5em;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+header.bg-img .content .home-info form.form-group {
+  position: relative;
+}
+@media screen and (width: 1366px) {
+  header.bg-img .content .home-info form.form-group {
+    margin-right: 50px;
+  }
+}
+header.bg-img .content .home-info form.form-group input {
+  border-radius: 50px;
+  border: none;
+  width: 100%;
+  padding: 15px 15px;
+  font-size: 14px;
+  outline: none;
+}
+@media screen and (width: 1366px) {
+  header.bg-img .content .home-info form.form-group input {
+    width: 55%;
+  }
+}
+header.bg-img .content .home-info form.form-group button.btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px 30px;
+}
+header.bg-img .content .home-info form.form-group button.btn:hover {
+  background-color: #202020;
+}
+@media screen and (width: 1366px) {
+  header.bg-img .content .home-info form.form-group button.btn {
+    position: absolute;
+    right: 50px;
+    top: 0;
+    font-size: 14px;
+    width: 30%;
+    margin-top: 0;
+  }
+}
+
+section.you-get {
+  margin-top: 100px;
+}
+section.you-get h2 {
+  font-size: 40px;
+  font-weight: normal;
+}
+section.you-get ul.nav-tabs {
+  border: none;
+}
+section.you-get ul.nav-tabs .nav-item .nav-link {
+  font-size: 18px;
+}
+section.you-get ul.nav-tabs .nav-item .nav-link.active {
+  border-color: transparent;
+  text-decoration: none;
+  border-bottom: 3px solid #29ca8e;
+  transition-timing-function: linear;
+  color: black;
+  padding: 0;
+  padding-bottom: 5px;
+}
+section.you-get ul.nav-tabs.nav a {
+  color: #999999;
+  font-size: 20px;
+  padding: 0;
+  padding-bottom: 5px;
+}
+section.you-get ul.nav-tabs.nav a:hover, section.you-get ul.nav-tabs.nav a:focus {
+  text-decoration: none;
+  border-color: transparent;
+  border-bottom: 3px solid #29ca8e;
+  transition-timing-function: linear;
+  color: black;
+}
+section.you-get .tab-pane-item p {
+  color: #999999;
+  font-size: 16px;
+}
+
+section.professional-team {
+  width: 100%;
+  background-color: #f9f9f9;
+}
+section.professional-team .card {
+  border: none;
+}
+section.professional-team .card .card-text {
+  color: #999999;
+  font-size: 15px;
+}
+
+section.people-say h3 {
+  font-size: 35px;
+}
+section.people-say .bg-black {
+  background-color: #202020;
+  color: #ffff;
+}
+section.people-say .bg-img {
+  background-image: url("../images/testimonial-image.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 350px;
+}
+section.people-say .carousel-item {
+  margin-bottom: 50px;
+}
+section.people-say .carousel-item p {
+  color: #d9d9d9;
+  font-style: italic;
+  margin-top: 5px;
+  font-size: 20px;
+}
+section.people-say .carousel-item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #ffff;
+}
+section.people-say .carousel-item span.name {
+  margin-left: 5px;
+}
+
+section.plan {
+  background-color: #f9f9f9;
+  width: 100%;
+  padding-top: 80px;
+}
+section.plan .cards {
+  padding-bottom: 100px;
+}
+section.plan .cards .plan-card {
+  border-left: 3px solid #f9f9f9;
+}
+section.plan .cards .plan-card h3 {
+  padding-bottom: 15px;
+  border-bottom: 3px solid #f9f9f9;
+}
+section.plan .cards .plan-card .last-p {
+  padding-bottom: 15px;
+  border-bottom: 3px solid #f9f9f9;
+}
+section.plan .cards .plan-card .price {
+  font-weight: 300;
+  font-size: 20px;
+}
+section.plan .cards .plan-card button {
+  padding: 9px 28px;
+}
+section.plan .cards .plan-card button:hover {
+  background-color: #202020;
+  transition: all 0.25s ease-in-out;
+}
+
+footer.content {
+  width: 100%;
+}
+footer.content .form-control {
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid #f0f0f0;
+  color: #e3e3e3;
+  border-radius: 0%;
+}
+footer.content .form-control:focus {
+  box-shadow: 0 0 0 0.2rem transparent;
+  border-bottom: 3px solid black;
+  border-radius: 0%;
+}
+footer.content .btn {
+  color: #ffff;
+  border-radius: 50px;
+  background-color: black;
+  padding: 10px 0;
+}
+footer.content .btn:hover {
+  background-color: #29ca8e;
+  transition: all 0.25s ease-in-out;
+}
+footer.content .socail-icon {
+  border-radius: 50%;
+  background-color: transparent;
+  color: #202020;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+}
+footer.content .socail-icon:hover {
+  color: #ffff;
+  background-color: #536976;
+  transition: all 0.25s ease-in-out;
+}
+
+header.bg-img .content .home-info form.form-group button.btn, section.plan .cards .plan-card button {
+  background-color: #29ca8e;
+  color: #ffff;
+  border-radius: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
